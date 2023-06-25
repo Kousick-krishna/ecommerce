@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import ProductContextProvider, { ProductContext } from "@/components/productcontext";
+import  { ProductContext } from "@/components/productcontext";
 import { useContext, useEffect, useState } from "react";
 
 export default function checkout(){

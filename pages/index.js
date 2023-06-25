@@ -22,7 +22,7 @@ export default function Home() {
       setSelectedProducts([]);
       setSuccess(true);
       }
-  },[])
+  },[setSelectedProducts])
 
    const categoriesNames =[...new Set(productsInfo.map(p => p.category))]
 
