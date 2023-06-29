@@ -11,7 +11,7 @@ export default function Product({_id,picture,price}){
         <>
     <div>
         <div>
-            <Image className="rounded-3xl ml-10 mt-8" src={picture} width={350} height={350}></Image>
+        <Image className="rounded-3xl ml-10 mt-8" src={picture} width={350}  height={350} alt=""></Image>
         </div>
         <div className="flex  w-96 rounded-xl ml-5 mt-5">
             <span className="ml-10 mt-3 text-2xl">${price}</span>

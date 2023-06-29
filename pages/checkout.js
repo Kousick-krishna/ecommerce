@@ -2,7 +2,8 @@ import Header from "@/components/header";
 import  { ProductContext } from "@/components/productcontext";
 import { useContext, useEffect, useState } from "react";
 
-export default function checkout(){
+
+export default function Checkout(){
     const [productInfos,setProductInfos] = useState([])
     const [name,setName] = useState();
     const [email,setEmail] = useState();
@@ -48,7 +49,7 @@ export default function checkout(){
             const amount = selectedProducts.filter(id => id === productInfo._id).length
             if(amount === 0) return;
             return(
-            <div>
+            <div key={productInfo._id}>
                 <div className="flex p-5 gap-3">
                     <img src={productInfo.picture} className="w-44 rounded-lg"/>
                     {productInfo.name}
